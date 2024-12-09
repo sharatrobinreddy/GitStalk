@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45AC1DE52D03B6A300EF467D /* TestPrivateFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 45AC1DE42D03B6A300EF467D /* TestPrivateFramework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45AC1DBA2D02AFC500EF467D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45AC1DA12D02AFC200EF467D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AC1DA82D02AFC200EF467D;
+			remoteInfo = GitStalk;
+		};
+		45AC1DC42D02AFC500EF467D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45AC1DA12D02AFC200EF467D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AC1DA82D02AFC200EF467D;
+			remoteInfo = GitStalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45AC1DA92D02AFC200EF467D /* GitStalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitStalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AC1DB92D02AFC500EF467D /* GitStalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitStalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AC1DC32D02AFC500EF467D /* GitStalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitStalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		45AC1DAB2D02AFC200EF467D /* GitStalk */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GitStalk;
+			sourceTree = "<group>";
+		};
+		45AC1DBC2D02AFC500EF467D /* GitStalkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GitStalkTests;
+			sourceTree = "<group>";
+		};
+		45AC1DC62D02AFC500EF467D /* GitStalkUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GitStalkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45AC1DA62D02AFC200EF467D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AC1DE52D03B6A300EF467D /* TestPrivateFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DB62D02AFC500EF467D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DC02D02AFC500EF467D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45AC1DA02D02AFC200EF467D = {
+			isa = PBXGroup;
+			children = (
+				45AC1DAB2D02AFC200EF467D /* GitStalk */,
+				45AC1DBC2D02AFC500EF467D /* GitStalkTests */,
+				45AC1DC62D02AFC500EF467D /* GitStalkUITests */,
+				45AC1DAA2D02AFC200EF467D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45AC1DAA2D02AFC200EF467D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45AC1DA92D02AFC200EF467D /* GitStalk.app */,
+				45AC1DB92D02AFC500EF467D /* GitStalkTests.xctest */,
+				45AC1DC32D02AFC500EF467D /* GitStalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45AC1DA82D02AFC200EF467D /* GitStalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AC1DCD2D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalk" */;
+			buildPhases = (
+				45AC1DA52D02AFC200EF467D /* Sources */,
+				45AC1DA62D02AFC200EF467D /* Frameworks */,
+				45AC1DA72D02AFC200EF467D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				45AC1DAB2D02AFC200EF467D /* GitStalk */,
+			);
+			name = GitStalk;
+			packageProductDependencies = (
+				45AC1DE42D03B6A300EF467D /* TestPrivateFramework */,
+			);
+			productName = GitStalk;
+			productReference = 45AC1DA92D02AFC200EF467D /* GitStalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45AC1DB82D02AFC500EF467D /* GitStalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AC1DD02D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalkTests" */;
+			buildPhases = (
+				45AC1DB52D02AFC500EF467D /* Sources */,
+				45AC1DB62D02AFC500EF467D /* Frameworks */,
+				45AC1DB72D02AFC500EF467D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45AC1DBB2D02AFC500EF467D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				45AC1DBC2D02AFC500EF467D /* GitStalkTests */,
+			);
+			name = GitStalkTests;
+			packageProductDependencies = (
+			);
+			productName = GitStalkTests;
+			productReference = 45AC1DB92D02AFC500EF467D /* GitStalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45AC1DC22D02AFC500EF467D /* GitStalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AC1DD32D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalkUITests" */;
+			buildPhases = (
+				45AC1DBF2D02AFC500EF467D /* Sources */,
+				45AC1DC02D02AFC500EF467D /* Frameworks */,
+				45AC1DC12D02AFC500EF467D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45AC1DC52D02AFC500EF467D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				45AC1DC62D02AFC500EF467D /* GitStalkUITests */,
+			);
+			name = GitStalkUITests;
+			packageProductDependencies = (
+			);
+			productName = GitStalkUITests;
+			productReference = 45AC1DC32D02AFC500EF467D /* GitStalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45AC1DA12D02AFC200EF467D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					45AC1DA82D02AFC200EF467D = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					45AC1DB82D02AFC500EF467D = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 45AC1DA82D02AFC200EF467D;
+					};
+					45AC1DC22D02AFC500EF467D = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 45AC1DA82D02AFC200EF467D;
+					};
+				};
+			};
+			buildConfigurationList = 45AC1DA42D02AFC200EF467D /* Build configuration list for PBXProject "GitStalk" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45AC1DA02D02AFC200EF467D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				45AC1DE32D03B6A300EF467D /* XCRemoteSwiftPackageReference "MyBinaryPackage_SPM" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 45AC1DAA2D02AFC200EF467D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45AC1DA82D02AFC200EF467D /* GitStalk */,
+				45AC1DB82D02AFC500EF467D /* GitStalkTests */,
+				45AC1DC22D02AFC500EF467D /* GitStalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45AC1DA72D02AFC200EF467D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DB72D02AFC500EF467D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DC12D02AFC500EF467D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45AC1DA52D02AFC200EF467D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DB52D02AFC500EF467D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AC1DBF2D02AFC500EF467D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45AC1DBB2D02AFC500EF467D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AC1DA82D02AFC200EF467D /* GitStalk */;
+			targetProxy = 45AC1DBA2D02AFC500EF467D /* PBXContainerItemProxy */;
+		};
+		45AC1DC52D02AFC500EF467D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AC1DA82D02AFC200EF467D /* GitStalk */;
+			targetProxy = 45AC1DC42D02AFC500EF467D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45AC1DCB2D02AFC500EF467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45AC1DCC2D02AFC500EF467D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45AC1DCE2D02AFC500EF467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GitStalk/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45AC1DCF2D02AFC500EF467D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GitStalk/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45AC1DD12D02AFC500EF467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitStalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitStalk";
+			};
+			name = Debug;
+		};
+		45AC1DD22D02AFC500EF467D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitStalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitStalk";
+			};
+			name = Release;
+		};
+		45AC1DD42D02AFC500EF467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitStalk;
+			};
+			name = Debug;
+		};
+		45AC1DD52D02AFC500EF467D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.GitStalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitStalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45AC1DA42D02AFC200EF467D /* Build configuration list for PBXProject "GitStalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AC1DCB2D02AFC500EF467D /* Debug */,
+				45AC1DCC2D02AFC500EF467D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AC1DCD2D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AC1DCE2D02AFC500EF467D /* Debug */,
+				45AC1DCF2D02AFC500EF467D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AC1DD02D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AC1DD12D02AFC500EF467D /* Debug */,
+				45AC1DD22D02AFC500EF467D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AC1DD32D02AFC500EF467D /* Build configuration list for PBXNativeTarget "GitStalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AC1DD42D02AFC500EF467D /* Debug */,
+				45AC1DD52D02AFC500EF467D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45AC1DE32D03B6A300EF467D /* XCRemoteSwiftPackageReference "MyBinaryPackage_SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sharatrobinreddy/MyBinaryPackage_SPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45AC1DE42D03B6A300EF467D /* TestPrivateFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45AC1DE32D03B6A300EF467D /* XCRemoteSwiftPackageReference "MyBinaryPackage_SPM" */;
+			productName = TestPrivateFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 45AC1DA12D02AFC200EF467D /* Project object */;
+}

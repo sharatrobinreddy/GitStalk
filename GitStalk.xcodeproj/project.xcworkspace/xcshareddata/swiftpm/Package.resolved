@@ -1,0 +1,15 @@
+{
+  "originHash" : "5fa908dd70d0da924e471ce87f595ca4ee7308c78a3d6dffcaf2c526cca02aad",
+  "pins" : [
+    {
+      "identity" : "mybinarypackage_spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sharatrobinreddy/MyBinaryPackage_SPM",
+      "state" : {
+        "revision" : "673385c2b46b4f57cab5d7334a70deb17614b17e",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
