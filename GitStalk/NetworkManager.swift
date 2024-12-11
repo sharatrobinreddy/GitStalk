@@ -99,7 +99,7 @@ import Foundation
 */
 class NetworkManager: ObservableObject {
     private let baseURL = "https://api.github.com"
-    private let token = ""
+    private let token = "<some token>"
 
     @Published var repositories: [Repository] = []
     @Published var releases: [Release] = []
