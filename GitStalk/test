@@ -1,0 +1,111 @@
+/*#import <CommonCrypto/CommonCrypto.h>
+#import <Security/Security.h>
+
+- (NSString *)decryptFile:(NSString *)filePath
+               privateKey:(NSString *)privateKeyPath
+                       iv:(NSData *)ivData {
+    // 1. Load the encrypted file
+    NSData *encryptedData = [NSData dataWithContentsOfFile:filePath];
+    if (!encryptedData) {
+        NSLog(@"Failed to load encrypted file.");
+        return nil;
+    }
+
+    // 2. Load the private key from the .pem file
+    NSString *privateKeyString = [NSString stringWithContentsOfFile:privateKeyPath encoding:NSUTF8StringEncoding error:nil];
+    if (!privateKeyString) {
+        NSLog(@"Failed to load private key.");
+        return nil;
+    }
+
+    // Create SecKeyRef from PEM data
+    SecKeyRef privateKey = [self createPrivateKeyFromPEM:privateKeyString];
+    if (!privateKey) {
+        NSLog(@"Failed to create SecKeyRef from private key.");
+        return nil;
+    }
+
+    // 3. Decrypt the AES key (Assuming AES key is embedded or provided separately)
+    NSData *encryptedAESKey = ...; // Extract the encrypted AES key
+    NSData *aesKey = [self decryptAESKey:encryptedAESKey withPrivateKey:privateKey];
+    if (!aesKey) {
+        NSLog(@"Failed to decrypt AES key.");
+        return nil;
+    }
+
+    // 4. Decrypt the file content using CCCrypt
+    size_t bufferSize = [encryptedData length] + kCCBlockSizeAES128;
+    void *buffer = malloc(bufferSize);
+
+    size_t decryptedSize = 0;
+    CCCryptorStatus status = CCCrypt(kCCDecrypt,
+                                     kCCAlgorithmAES,
+                                     kCCOptionPKCS7Padding,
+                                     [aesKey bytes],
+                                     [aesKey length],
+                                     [ivData bytes],
+                                     [encryptedData bytes],
+                                     [encryptedData length],
+                                     buffer,
+                                     bufferSize,
+                                     &decryptedSize);
+
+    if (status == kCCSuccess) {
+        NSData *decryptedData = [NSData dataWithBytesNoCopy:buffer length:decryptedSize];
+        NSString *decryptedString = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
+        NSLog(@"Decryption successful.");
+        return decryptedString;
+    } else {
+        NSLog(@"Decryption failed: %d", status);
+        free(buffer);
+        return nil;
+    }
+}
+
+- (SecKeyRef)createPrivateKeyFromPEM:(NSString *)pemString {
+    // Remove headers and footers
+    NSString *keyString = [pemString stringByReplacingOccurrencesOfString:@"-----BEGIN PRIVATE KEY-----" withString:@""];
+    keyString = [keyString stringByReplacingOccurrencesOfString:@"-----END PRIVATE KEY-----" withString:@""];
+    keyString = [keyString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+
+    NSData *keyData = [[NSData alloc] initWithBase64EncodedString:keyString options:0];
+    if (!keyData) {
+        NSLog(@"Failed to decode base64 private key.");
+        return nil;
+    }
+
+    // Create SecKey from data
+    NSDictionary *options = @{ (__bridge id)kSecAttrKeyType: (__bridge id)kSecAttrKeyTypeRSA,
+                               (__bridge id)kSecAttrKeyClass: (__bridge id)kSecAttrKeyClassPrivate };
+    SecKeyRef privateKey = SecKeyCreateWithData((__bridge CFDataRef)keyData,
+                                                (__bridge CFDictionaryRef)options,
+                                                NULL);
+
+    return privateKey;
+}
+- (NSData *)decryptAESKey:(NSData *)encryptedAESKey withPrivateKey:(SecKeyRef)privateKey {
+    if (!privateKey) return nil;
+
+    CFErrorRef error = NULL;
+    NSData *decryptedAESKey = (__bridge_transfer NSData *)SecKeyCreateDecryptedData(privateKey,
+                                                                                     kSecKeyAlgorithmRSAEncryptionPKCS1,
+                                                                                     (__bridge CFDataRef)encryptedAESKey,
+                                                                                     &error);
+
+    if (error) {
+        NSLog(@"Failed to decrypt AES key: %@", (__bridge NSError *)error);
+        return nil;
+    }
+
+    return decryptedAESKey;
+}
+NSString *filePath = [[NSBundle mainBundle] pathForResource:@"encrypted" ofType:@"txt"];
+NSString *privateKeyPath = [[NSBundle mainBundle] pathForResource:@"private_key" ofType:@"pem"];
+NSData *ivData = ...; // Initialization vector in NSData format
+
+NSString *decryptedText = [self decryptFile:filePath privateKey:privateKeyPath iv:ivData];
+if (decryptedText) {
+    NSLog(@"Decrypted text: %@", decryptedText);
+} else {
+    NSLog(@"Failed to decrypt the file.");
+}*/
